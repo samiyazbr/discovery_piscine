@@ -1,0 +1,24 @@
+# Program to calculate sum and average of three numbers
+
+num1 = input("Enter first number: ")
+num2 = input("Enter second number: ")
+num3 = input("Enter third number: ")
+
+total = num1 + num2 + num3     # ⚠️ Logical: strings not converted to int
+print("Total is" total)        # ❌ Missing comma
+
+average = total / 3            # ⚠️ Logical: will fail if total is string
+
+if average = 0                 # ❌ Using = instead of == and no colon after if
+    print("Average is zero")
+elif average > 0               # ❌ Missing colon after elif
+    print("Positive average")
+else                           # ❌ Missing colon after else
+print("Negative average")      # ❌ Missing indentation
+
+if num1 > num2 and num1 > num3  # ❌ Missing colon
+    print("Num1 is largest")
+else                           # ❌ Missing colon
+    print("Others are larger")
+
+pritn("Program completed")     # ❌ Typo: print misspelled

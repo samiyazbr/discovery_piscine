@@ -1,0 +1,22 @@
+# Calculate average and assign grades
+
+student = input("Enter student name: ")
+marks = [80, 70, "90", 100]     # ⚠️ Logical: string in numeric list (causes TypeError in sum)
+
+total = sum(marks)
+average = total / len(marks)
+
+if average >= 90                  # ❌ Missing colon
+    grade = "A"
+elif average >= 80:
+    grade = "B"
+elif average >= 70:
+    grade = "C"
+else                              # ❌ Missing colon
+    grade = "F"                  # ❌ Missing indentation
+
+if average = 100                # ❌ Using = instead of ==; ❌ Missing colon
+    print("Perfect score!")
+
+print("Student:", student, "Grade", grade)  # ✅ Correct formatting (no error)
+pritn("Done!")                  # ❌ Typo: print misspelled
