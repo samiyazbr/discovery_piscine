@@ -2,20 +2,20 @@
 
 num = int(input("Enter number: "))
 
-fact = 0                            # ⚠️ Logical: should start with 1
+fact = 0
 
-for i in range(1, num + 1)          # ❌ Missing colon
-    fact = fact * i                 # ⚠️ Multiplying by 0 → always 0
-    print("Current factorial:" fact)  # ❌ Missing comma between arguments
+for i in range(1, num + 1)
+    fact = fact * i
+    print("Current factorial:" fact)
 
-if num < 0                           # ❌ Missing colon
+if num < 0
     print("Negative numbers not allowed")
 elif num == 0:
     print("Factorial is 1")
-else                                 # ❌ Missing colon
-    print("Final factorial is" fact)  # ❌ Missing comma between arguments
+else
+    print("Final factorial is" fact)
 
-pritn("Calculation done")            # ❌ Typo: print misspelled
-print("Factorial of" num "is" fact)  # ❌ Missing commas between arguments
-print("Program completed"            # ❌ Missing closing parenthesis
-result = factorial(num)              # ⚠️ Logical/NameError: function not defined
+pritn("Calculation done")
+print("Factorial of" num "is" fact)
+print("Program completed"
+result = factorial(num)

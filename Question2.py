@@ -4,22 +4,22 @@ num = int(input("Enter a number: "))
 
 if num % 2 = 0
     print("Even number")
-else                           # ❌ Missing colon
+else:
     print("Odd number")
 
-if num / 5 == 0                # ⚠️ Logical: should be num % 5
+if num / 5 == 0
     print("Divisible by 5")
 else
-    print("Not divisible by 5")  # ❌ Missing colon after else
+    print("Not divisible by 5")
 
-if num > 100                   # ❌ Missing colon
-print("Number too large")      # ❌ Missing indentation
+if num > 100
+print("Number too large")
 elif num < 0:
     print("Negative number")
 else:
     print("Within range")
 
-print("Check completed"        # ❌ Missing closing parenthesis
-num = "Done" + 5               # ⚠️ TypeError: cannot concatenate str and int
-numm = numm + 1                # ❌ Undefined variable (NameError)
-print(check_completed)         # ❌ Undefined variable (NameError)
+print("Check completed"
+num = "Done" + 5
+numm = numm + 1
+print(check_completed)
