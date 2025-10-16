@@ -4,23 +4,27 @@ import random
 
 number = random.randint(1, 10)
 
-guess = input("Guess a number: ")
+guess = input("Guess a number: ")   # ⚠️ Logical: input is str, not int
 
-if guess == number
+if guess == number                  # ❌ Missing colon
     print("Correct!")
 elif guess > number:
     print("Too high!")
 elif guess < number:
     print("Too low!")
-else:
-    print("Invalid")
+else
+    print("Invalid")                # ❌ Missing colon after else
 
 tries = 0
-while tries < 3
+while tries < 3                     # ❌ Missing colon
     guess = input("Try again: ")
     tries += 1
-    if guess = number
+    if guess = number               # ❌ Using = instead of ==; ❌ Missing colon
         print("You got it!")
         break
 
-print("Game over"
+if tries == 3
+print("Out of tries!")              # ❌ Missing colon and indentation
+
+print("Game over"                   # ❌ Missing closing parenthesis
+print(result)                       # ❌ Undefined variable (NameError)

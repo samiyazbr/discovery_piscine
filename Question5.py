@@ -1,22 +1,26 @@
 # Calculate average and assign grades
 
 student = input("Enter student name: ")
-marks = [80, 70, "90", 100]
+marks = [80, 70, "90", 100]      # ⚠️ Logical: "90" is a string, causes TypeError in sum()
 
 total = sum(marks)
 average = total / len(marks)
 
-if average >= 90
+if average >= 90                 # ❌ Missing colon
     grade = "A"
 elif average >= 80:
     grade = "B"
-elif average >= 70:
-    grade = "C"
-else
-grade = "F"
+elif average >= 70
+    grade = "C"                  # ❌ Missing colon after elif
+else                             # ❌ Missing colon
+grade = "F"                      # ❌ Missing indentation
 
-if average = 100
+if average = 100                 # ❌ Using = instead of ==; ❌ Missing colon
     print("Perfect score!")
 
-print("Student:", student, "Grade", grade)
-pritn("Done!")
+if average > 100:
+    print("Impossible average!")  # ⚠️ Logical: average > 100 impossible with given marks
+
+print("Student:", student, "Grade" grade)  # ❌ Missing comma before grade
+pritn("Done!")                   # ❌ Typo: print misspelled
+print("Program complete"         # ❌ Missing closing parenthesis
